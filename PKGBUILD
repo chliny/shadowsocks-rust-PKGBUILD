@@ -7,7 +7,8 @@ pkgdesc='A Rust port of shadowsocks https://shadowsocks.org/'
 arch=('any')
 url='https://github.com/shadowsocks/shadowsocks-rust'
 license=('MIT')
-depends=('openssl' 'libsodium' 'rust')
+depends=('openssl' 'libsodium')
+makedepends=('cargo')
 source=(
     "git+https://github.com/shadowsocks/${pkgname}.git"
 	'shadowsocks-rust@.service'
